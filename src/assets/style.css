@@ -1,0 +1,769 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  /*********** Homepage ************************/
+  
+  img.backgroundImg {
+    width: 100%;
+    position: absolute;
+   
+  }
+  
+  header {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .logo {
+    cursor: pointer;
+    margin: 0 0 0 10vw;
+    width: 7vw;
+  }
+  
+  ul.nav {
+    display: inline-flex;
+    list-style-type: none;
+    gap: 1vw;
+    cursor: pointer;
+    margin: 0 10vw 0 0;
+  }
+  
+  ul.nav li img {
+    width: 2vw;
+  }
+  
+  .top {
+    display: flex;
+  }
+  
+  .top h1 {
+    position: absolute;
+    font-size: 5vw;
+    color: white;
+    padding-left: 12%;
+    padding-top: 15%;
+  }
+  
+   hr #top {
+    border: 0;
+    width:37vw;
+    background-color: black;
+    height: 0.2vw;
+
+  }
+  /******************************** GRIDS ********************************/
+  
+  /* .arrow-container {
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    padding: 0.2vw;
+    width: 2vw;
+  }
+  
+  .arrow-container img {
+    width: 100%;
+  } */
+  
+  /******************************** SELECTED ******************************/
+  .selected {
+    position: relative;
+    margin-top: 50vw;
+    font-size: 2vw;
+    padding-left: 12vw;
+  }
+  
+  .selected-just-for-you {
+    display: grid;
+    grid-template-columns:repeat(4, 19vw);
+    grid-column-gap: 4vw;
+    grid-row-gap: 15vw;
+    position: relative;
+    margin-top: 3vw;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+
+.card {
+    
+  }
+  
+  .selected-just-for-you .card .info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1vw;
+  }
+  
+  .selected-just-for-you .card .info h4 {
+    font-weight: 100;
+    font-size: 1vw;
+  }
+  .selected-just-for-you .card .info .addBtn {
+    background-color: rgb(30, 105, 119);
+    border-radius: 7%;
+    color: white;
+    font-weight: 500;
+    font-size: 1vw;
+  }
+  .selected-just-for-you .card .img-container {
+    background-color: rgb(218, 216, 216);
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+  }
+  
+  .selected-just-for-you .card img {
+    width: 100%;
+  }
+  
+  /******************************** RECOMMENDED ********************************/
+  
+  .recommended {
+    position: relative;
+    margin-top: 10vw;
+    font-size: 2vw;
+    padding-left: 12vw;
+  }
+  
+  .recommended-tees {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    grid-column-gap: 4vw;
+    grid-row-gap: 15vw;
+    position: relative;
+    margin-top: 3vw;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .recommended-tees .card .info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1vw;
+  }
+  
+  .recommended-tees .card .info h4 {
+    font-weight: 100;
+    font-size: 1vw;
+  }
+  .recommended-tees .card .info .addBtn {
+    background-color: rgb(30, 105, 119);
+    border-radius: 7%;
+    color: white;
+    font-weight: 500;
+    font-size: 1vw;
+  }
+  .recommended-tees .card .img-container {
+    background-color: rgb(218, 216, 216);
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+  }
+  
+  .recommended-tees .card img {
+    width: 100%;
+  }
+  
+  /******************************** FAVORITE ********************************/
+  
+  .favorite {
+    position: relative;
+    margin-top: 10vw;
+    font-size: 2vw;
+    padding-left: 12vw;
+  }
+  
+  .favorite-tees {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    grid-column-gap: 4vw;
+    grid-row-gap: 15vw;
+    position: relative;
+    margin-top: 3vw;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .favorite-tees .card .info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1vw;
+  }
+  
+  .favorite-tees .card .info h4 {
+    font-weight: 100;
+    font-size: 1vw;
+  }
+  .favorite-tees .card .info .addBtn {
+    background-color: rgb(30, 105, 119);
+    border-radius: 7%;
+    color: white;
+    font-weight: 500;
+    font-size: 1vw;
+  }
+  .favorite-tees .card .img-container {
+    background-color: rgb(218, 216, 216);
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+  }
+  
+  .favorite-tees .card img {
+    width: 100%;
+  }
+  
+  /************************************ FOOTER ********************************/
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    width: 15vw;
+  }
+  .footer-logo img {
+    width: 100%;
+  }
+  .about-us {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    font-size: 1vw;
+    margin-bottom: 2vw;
+  }
+  
+  .btm-foot {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20vw;
+  }
+  
+  .btns {
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+  }
+  .btns .check {
+    
+      font-size: 1.5vw;
+      font-weight: bold;
+      border: 0.1vw solid #cecece;
+      background-color: white;
+      border-radius: 2vw;
+      padding: 0.5vw 2vw;
+      gap: 1vw;
+  }
+  
+  
+  .copyright {
+    width: 100%;
+    border-top: 0.2vw solid #cecece;
+    display: flex;
+    justify-content: center;
+    padding: 3vw 0;
+  }
+  
+  .copyright img {
+    width: 22vw;
+  }
+  
+  /**************************************************************             ************************************************************/
+  /************************************************************** LOG_IN PAGE ************************************************************/
+  /**************************************************************             ************************************************************/
+  img.backgroundImg1 {
+    width: 100%;
+    position: absolute;
+    filter: brightness(0.3);
+  }
+  
+  .log-in {
+    margin-top: 5vw;
+    width: 21vw;
+    min-height: 25vw;
+    top: 50%;
+    left: 50%;
+    padding: 3vw 3vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 8px 8px 60px #000;
+    background-color: white;
+  }
+  
+  .log-in h1 {
+    font-size: 2vw;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1vw;
+  }
+  
+  .log-in span {
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+  }
+  
+  .log-in span input[type="checkbox"] {
+    width: 1vw;
+    height: 1vw;
+    margin-right: 1vw;
+  }
+  
+  .log-in p {
+    font-size: 1vw;
+    text-align: center;
+  }
+
+  
+  .log-in #close {
+    margin-left: 19vw;
+    font-size: 1vw;
+  }
+  
+  .control {
+    width: 100%;
+  }
+  .control input {
+    width: 19vw;
+    display: block;
+    padding: 0.5vw;
+    color: #000;
+    border: 0.1vw solid rgb(194, 194, 194);
+    outline: none;
+    margin: 1.2vw 0;
+    border-radius: 2vw;
+    font-size: 1vw;
+  }
+  
+  .control input,
+  input::-webkit-input-placeholder {
+    font-size: 1vw;
+    line-height: 3;
+    padding-left: 1vw;
+  }
+  
+  .control input[type="submit"] {
+    background-color: rgb(97, 80, 252);
+    color: white;
+    font-size: 1vw;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    width: 21vw;
+  }
+  
+  .control input[type="submit"]:hover {
+    opacity: 1;
+  }
+  
+  .sign-up {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 3vw 0vw 3vw;
+  }
+  
+  .sign-up h1 {
+    font-size: 1vw;
+    font-weight: 500;
+  }
+  .sign-up a {
+    text-decoration: none;
+    color: rgb(14, 158, 168);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    font-size: 1vw;
+  }
+  
+  .sign-up a:hover {
+    opacity: 0.7;
+  }
+  
+  /**************************************************************             ************************************************************/
+  /************************************************************** SIGN_UP PAGE ************************************************************/
+  /**************************************************************             ************************************************************/
+  img.backgroundImg2 {
+    width: 100%;
+    position: absolute;
+    filter: brightness(0.3);
+  }
+  
+  .sign-up1 {
+    margin-top: 5vw;
+    width: 21vw;
+    min-height: 25vw;
+    top: 50%;
+    left: 50%;
+    padding: 3vw 3vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 8px 8px 60px #000;
+    background-color: white;
+  }
+  
+  .sign-up1 h1 {
+    font-size: 2vw;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1vw;
+  }
+  
+  .sign-up1 span {
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sign-up1 span input[type="checkbox"] {
+    width: 1vw;
+    height: 1vw;
+    margin-right: 1vw;
+  }
+  
+  .sign-up1 p {
+    font-size: 1vw;
+    text-align: center;
+  }
+
+  .sign-up1 #close {
+    margin-left: 19vw;
+    font-size: 1vw;
+  }
+  
+  .control {
+    width: 100%;
+  }
+  .control input {
+    width: 19vw;
+    display: block;
+    padding: 0.5vw;
+    color: #000;
+    border: 0.1vw solid rgb(194, 194, 194);
+    outline: none;
+    margin: 1.2vw 0;
+    border-radius: 2vw;
+    font-size: 1vw;
+  }
+  
+  .control input,
+  input::-webkit-input-placeholder {
+    font-size: 1vw;
+    line-height: 3;
+    padding-left: 1vw;
+  }
+  
+  .control input[type="submit"] {
+    background-color: rgb(97, 80, 252);
+    color: white;
+    font-size: 1vw;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    width: 21vw;
+  }
+  
+  .control input[type="submit"]:hover {
+    opacity: 1;
+  }
+  
+  .log-in1 {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 3vw 0vw 3vw;
+  }
+  
+  .log-in1 h1 {
+    font-size: 1vw;
+    font-weight: 500;
+  }
+  .log-in1 a {
+    text-decoration: none;
+    color: rgb(14, 158, 168);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    font-size: 1vw;
+  }
+  
+  .log-in1 a:hover {
+    opacity: 0.7;
+  }
+  
+  /**************************************************************             ************************************************************/
+  /**************************************************************  CART PAGE  ************************************************************/
+  /**************************************************************             ************************************************************/
+  #header1 {
+    border-bottom: .2vw solid #cecece ;
+  }
+  .cart-container {
+    padding:4vw 12vw; 
+    border-bottom: 0.1vw solid #cecece;
+  }
+  
+  .cart-container #wish {
+  padding:0 3vw;
+  font-size: 2vw;
+  }
+  
+  .cart-container #shop {
+    padding:0 3vw;
+    font-size: 2vw;
+    }
+  
+  .cart-container table {
+    width: 100%;
+    border-spacing: 3vw;
+  }
+  
+  .cart-container table thead {
+    color:#cecece;
+  }
+  
+  .product {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+  }
+  
+  .product img {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    border: 0.1vw solid;
+    padding: 1vw;
+  }
+  
+  .product-detail {
+    text-align:left;
+  }
+  
+  .product-detail h1 {
+    font-size: 1.5vw;
+  }
+  
+  .product-detail p {
+    font-size: 1vw;
+    color:#cecece;
+  }
+  
+  .amount {
+    display: flex;
+    font-size: .8vw;
+    border: 0.1vw solid #cecece;
+    background-color: white;
+    border-radius: 2vw;
+    padding: 0.5vw 2vw;
+    gap: 1vw;
+  }
+  
+  .amount #decrement {
+    color:#cecece
+  }
+  
+  .cart-container table thead tr td {
+    font-size: 1.5vw;
+  }
+  
+  .cart-container table tbody tr td h2 {
+    font-size: 1.5vw;
+  }
+  
+  .cart-container table tbody tr td p {
+  text-align: center;
+  font-size: 1vw;
+  }
+  
+  
+  .btm-cart {
+    display: flex;
+    gap: 15vw;
+    align-items: flex-end;
+    padding: 3vw;
+  }
+  
+  .btns .continue {
+    
+      font-size: 1.5vw;
+      font-weight: bold;
+      border: 0.1vw solid #cecece;
+      background-color: white;
+      border-radius: 2vw;
+      padding: 0.5vw 2vw;
+      gap: 1vw;
+  }
+  
+  .btns .next {
+    
+      font-size: 1.5vw;
+      font-weight: bold;
+      border: 0.1vw solid #cecece;
+      background-color: rgb(70 0 230);
+      border-radius: 2vw;
+      padding: 0.5vw 2vw;
+      gap: 1vw;
+      color: white;
+  }
+  
+  .total p{
+    font-size: 1.5vw;
+  }
+  
+  .total h1{
+    font-size:2vw;
+  }
+  
+  .total{
+    margin-top: 5vw;
+    margin-top: 5vw;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+  }
+  
+  
+  
+  /**************************************************************             ************************************************************/
+  /************************************************************* THANK YOU PAGE ************************************************************/
+  /**************************************************************             ************************************************************/
+  
+  .thank-u {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .thank-u h1 {
+    font-size: 3vw;
+    background-color: rgb(70 0 230);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 3vw;
+  }
+  
+  .thank-u p {
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+    font-size: 2vw;
+    text-align: center;
+  }
+  
+  
+  .thank-u input {
+    padding: 0.5vw;
+    border-radius: 1vw;
+    background-color: #4600e6;
+    color: white;
+    width: 12vw;
+    font-size: 1vw;
+  }
+  
+  
+  /**************************************************************             ************************************************************/
+  /************************************************************* ORDER PAGE   ************************************************************/
+  /**************************************************************             ************************************************************/
+  .shipment {
+    padding: 4vw 5vw;
+  }
+  
+  .shipment h1 {
+    font-size: 1vw;
+    }
+  
+  .details {
+  margin-left: 3vw;
+  }
+  
+  .order {
+    width: 100%;
+  }
+  
+  .order #header {
+    font-size: 3vw;
+    background-color: rgb(70 0 230);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 3vw;
+  }
+  
+  .order p {
+    font-size: 1vw;
+  }
+  
+  .order #ship {
+    font-size: 1.4vw;
+    padding-bottom: 1vw;
+  }
+  
+  .order input {
+    padding: 0.5vw;
+    border-radius: 2vw;
+    border: 0.1vw solid #cecece;
+    width: 35vw;
+    font-size: 1vw;
+  }
+  
+  .order table {
+    width: 55vw;
+    border-spacing: 3vw;
+  }
+  
+  .p-info{
+    display:flex;
+    flex-direction: column;
+    padding: 4vw 8vw;
+    gap:2vw;
+  }
+  
+  .p-info h1 {
+    font-size: 1vw;
+    font-weight: 600;
+    padding-bottom: 1vw;
+  }
+  
+  .p-info #btn {
+    padding: 0.5vw;
+    border-radius: 1vw;
+    background-color: #4600e6;
+    color: white;
+    width: 12vw;
+    font-size: 1vw;
+  }
+  
+  .items h2 {
+    font-size: .8vw;
+    border: 0.1vw solid #cecece;
+    background-color: white;
+    border-radius: 2vw;
+    padding: 0.5vw 2vw;
+    text-align: center;
+    width: 1vw;
+  }
+  
+  .total h2{
+    font-size: .8vw;
+    border: 0.1vw solid #cecece;
+    background-color: white;
+    border-radius: 2vw;
+    padding: 0.5vw 2vw;
+    text-align: center;
+    width: 1vw;
+  }
+  
+  .shipment hr {
+    width:31vw;
+    background-color: black;
+    margin-left: 3vw;
+  }
